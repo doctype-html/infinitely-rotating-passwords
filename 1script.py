@@ -33,6 +33,6 @@ def rotate_passwords():
     while True:
         for password in passwords:
             change_password(password)
-            time.sleep(1800)  # password changes every 30 mins
+            time.sleep(900)  # password changes every 15 mins
 if __name__ == "__main__":
     try: rotate_passwords()
