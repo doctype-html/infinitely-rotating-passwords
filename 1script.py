@@ -1,8 +1,3 @@
-# NOTES that i think you already know but...
- # 1) run this script with sudo "sudo python3 script1.py" so the code actually works
- # 2) sudo chpasswd 2 change password once u do that
- # 3) after that it should rotate thru pre-determined list 
-
 import getpass
 import subprocess
 import time
@@ -33,6 +28,13 @@ def rotate_passwords():
     while True:
         for password in passwords:
             change_password(password)
-            time.sleep(30)  # password changes every few seconds because we're meanies :)
+            time.sleep(30)
 if __name__ == "__main__":
-    try: rotate_passwords()
+    try: 
+        rotate_passwords()
+
+# NOTES that i think you already know but...
+ # 1) run this script with sudo "sudo python3 script1.py" so the code actually works
+ # 2) sudo chpasswd to change password
+ # 3) after that it should rotate thru pre-determined list 
+ # 4) i may attempt to make it randomly generate passwords every 30 secs which is simple but currently have 0 time so.
