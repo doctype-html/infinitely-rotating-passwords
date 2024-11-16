@@ -28,7 +28,7 @@ def rotate_passwords():
     while True:
         for password in passwords:
             change_password(password)
-            time.sleep(30)
+            time.sleep(1800)
 if __name__ == "__main__":
     try: 
         rotate_passwords()
